@@ -1,0 +1,255 @@
+<svg width="1600" height="300" viewBox="0 0 1600 300" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#061B58"/>
+<stop offset="50%" stop-color="#3030C8"/>
+<stop offset="100%" stop-color="#A13CFF"/>
+
+<animateTransform
+attributeName="gradientTransform"
+type="translate"
+values="0 0;0.15 0;0 0"
+dur="8s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<radialGradient id="glow">
+<stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+
+<filter id="blur">
+<feGaussianBlur stdDeviation="13"/>
+</filter>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect
+width="1600"
+height="300"
+rx="28"
+fill="url(#bg)"
+/>
+
+<!-- GLOW -->
+
+<circle
+cx="220"
+cy="107"
+r="93"
+fill="url(#glow)">
+
+<animate
+attributeName="cx"
+values="220;320;220"
+dur="7s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="1400"
+cy="93"
+r="100"
+fill="url(#glow)">
+
+<animate
+attributeName="cx"
+values="1400;1300;1400"
+dur="8s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- FLOATING CIRCLES -->
+
+<circle
+cx="230"
+cy="157"
+r="46"
+fill="#4F8CFF"
+opacity="0.22"
+filter="url(#blur)">
+
+<animate
+attributeName="cy"
+values="157;129;157"
+dur="5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="1510"
+cy="71"
+r="32"
+fill="#FFFFFF"
+opacity="0.18">
+
+<animate
+attributeName="cy"
+values="71;96;71"
+dur="4s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- DOT PATTERN -->
+
+<g fill="#FFFFFF" opacity="0.45">
+
+<circle cx="90" cy="64" r="3"/>
+<circle cx="120" cy="64" r="3"/>
+<circle cx="150" cy="64" r="3"/>
+<circle cx="180" cy="64" r="3"/>
+<circle cx="210" cy="64" r="3"/>
+
+<circle cx="90" cy="86" r="3"/>
+<circle cx="120" cy="86" r="3"/>
+<circle cx="150" cy="86" r="3"/>
+<circle cx="180" cy="86" r="3"/>
+<circle cx="210" cy="86" r="3"/>
+
+<circle cx="90" cy="107" r="3"/>
+<circle cx="120" cy="107" r="3"/>
+<circle cx="150" cy="107" r="3"/>
+<circle cx="180" cy="107" r="3"/>
+<circle cx="210" cy="107" r="3"/>
+
+</g>
+
+<!-- MOVING LIGHT -->
+
+<circle
+cx="-100"
+cy="57"
+r="50"
+fill="#FFFFFF"
+opacity="0.12"
+filter="url(#blur)">
+
+<animate
+attributeName="cx"
+values="-100;1700;-100"
+dur="12s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- WAVE 1 -->
+
+<path
+d="M0 236
+C220 193 380 214 580 250
+C800 289 1000 264 1190 225
+C1360 189 1480 204 1600 221
+L1600 300
+L0 300 Z"
+fill="#FFFFFF"
+opacity="0.20">
+
+<animate
+attributeName="d"
+dur="7s"
+repeatCount="indefinite"
+values="
+M0 236 C220 193 380 214 580 250 C800 289 1000 264 1190 225 C1360 189 1480 204 1600 221 L1600 300 L0 300 Z;
+M0 250 C220 214 390 236 580 264 C790 293 1000 250 1190 214 C1370 182 1490 214 1600 236 L1600 300 L0 300 Z;
+M0 236 C220 193 380 214 580 250 C800 289 1000 264 1190 225 C1360 189 1480 204 1600 221 L1600 300 L0 300 Z
+"/>
+
+</path>
+
+<!-- WAVE 2 -->
+
+<path
+d="M0 257
+C250 225 420 261 620 275
+C850 293 1030 239 1220 214
+C1400 193 1510 225 1600 239
+L1600 300
+L0 300 Z"
+fill="#FFFFFF"
+opacity="0.14">
+
+<animate
+attributeName="d"
+dur="9s"
+repeatCount="indefinite"
+values="
+M0 257 C250 225 420 261 620 275 C850 293 1030 239 1220 214 C1400 193 1510 225 1600 239 L1600 300 L0 300 Z;
+M0 243 C250 214 420 250 620 268 C850 307 1040 257 1220 225 C1400 200 1510 236 1600 250 L1600 300 L0 300 Z;
+M0 257 C250 225 420 261 620 275 C850 293 1030 239 1220 214 C1400 193 1510 225 1600 239 L1600 300 L0 300 Z
+"/>
+
+</path>
+
+<!-- NAME -->
+
+<text
+x="800"
+y="132"
+text-anchor="middle"
+font-family="Arial, Helvetica, sans-serif"
+font-size="51"
+font-weight="700"
+fill="#FFFFFF">
+Mehedi Hasan
+</text>
+
+<!-- TITLE -->
+
+<text
+x="800"
+y="182"
+text-anchor="middle"
+font-family="Arial, Helvetica, sans-serif"
+font-size="27"
+font-weight="700"
+fill="#FFFFFF">
+Full Stack Software Engineer
+</text>
+
+<!-- ANIMATED LINE -->
+
+<rect
+x="720"
+y="209"
+width="160"
+height="4"
+rx="3"
+fill="#D83CFF">
+
+<animate
+attributeName="width"
+values="86;186;86"
+dur="3s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="x"
+values="757;707;757"
+dur="3s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- BORDER -->
+
+<rect
+x="2"
+y="2"
+width="1596"
+height="296"
+rx="28"
+fill="none"
+stroke="#FFFFFF"
+stroke-opacity="0.15"
+stroke-width="2"/>
+
+</svg>
